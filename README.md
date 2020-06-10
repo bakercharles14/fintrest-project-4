@@ -13,7 +13,7 @@ The Target End User is intended to be someone who wants to be able to view conte
 [Heroku App Link](https://fintrest.herokuapp.com/)
 ### --------------------------------------------------------------------------------------------
 ### Wire Frame Images
-<img src="./client/public/choose-creator.png" alt="choose creator page" width="400" height="300"/>          <img src="./client/public/single-creator.png" alt="single creator page" width="400" height="300"/>          <img src="./client/public/BBB-Contact-Page.png" alt="contact page" width="400" height="300"/>           <img src="./client/public/create-post.png" alt="create post page" width="400" height="300"/>          <img src="./client/public/single-post.png" alt="single post page" width="400" height="300"/>
+<img src="./client/public/choose-creator.png" alt="choose creator page" width="400" height="300"/>          <img src="./client/public/single-creator.png" alt="single creator page" width="400" height="300"/>          <img src="./client/public/create-post.png" alt="create post page" width="400" height="300"/>          <img src="./client/public/single-post.png" alt="single post page" width="400" height="300"/>
 
 ### --------------------------------------------------------------------------------------------
 # ERD Image
