@@ -10,7 +10,6 @@ router.register('fin', views.FinView)
 router.register('allposts', views.AllPostsView)
 
 
-
 urlpatterns = [
     path('', include(router.urls))
 ]
