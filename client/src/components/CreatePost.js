@@ -10,7 +10,7 @@ export default class CreatePost extends Component {
             date: '',
             content: '',
             image: '',
-            creator: ''
+            creator: 1
         },
         creators: []
     }
@@ -38,7 +38,7 @@ export default class CreatePost extends Component {
 
     onSubmit = async (evt) => {
         evt.preventDefault()
-        console.log('HITTIN THIS FUNCTION')
+        console.log('HITTING THIS FUNCTION')
         try {
             await axios.post('/api/v1/post/', this.state.newPost)
         } catch (error) {

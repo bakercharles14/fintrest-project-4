@@ -16,7 +16,7 @@ class Post(models.Model):
     content = models.TextField()
     image = models.TextField()
     creator = models.ForeignKey(
-        Creator, on_delete=models.CASCADE, related_name='posts')
+        Creator, on_delete=models.CASCADE, related_name='post')
 
     def __str__(self):
         return self.title

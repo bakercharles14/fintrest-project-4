@@ -15,14 +15,21 @@ class FinSerializer(serializers.ModelSerializer):
 
 
 class PostSerializer(serializers.ModelSerializer):
+    creator = CreatorSerializer(many=False, read_only=True)
+
     class Meta:
         model = Post
-        fields = '__all__'
+        fields = ('id',
+                  'title',
+                  'date',
+                  'content',
+                  'image',
+                  'creator',)
 
 
 class AllPostsSerializer(serializers.ModelSerializer):
-    fins = FinSerializer(many=True, read_only=True)
-    creator = CreatorSerializer(many=False, read_only=True)
+    fins = FinSerializer(many=True, read_only=False)
+    creator = CreatorSerializer(many=False, read_only=False)
 
     class Meta:
         model = Post
