@@ -4,6 +4,7 @@ import './App.css'
 import AllPosts from './components/AllPosts'
 import Creator from './components/Creator'
 import Fins from './components/Fins'
+import Post from './components/Post'
 
 
 
@@ -25,6 +26,7 @@ export default class App extends React.Component {
           </nav>
           <Switch>
             <Route exact path='/' component={AllPosts} />
+            <Route exact path='/post/:postId' component={Post} />
             <Route exact path='/fins' component={Fins} />
             <Route exact path='/creator' component={Creator} />
           </Switch>
