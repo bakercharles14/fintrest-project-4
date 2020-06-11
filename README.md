@@ -17,6 +17,6 @@ The Target End User is intended to be someone who wants to be able to view conte
 
 ### --------------------------------------------------------------------------------------------
 # ERD Image
-<img src="./client/public/Project-4-erd.png" alt="ERD Image" width="600" height="300">
+<img src="./client/public/project-4-erd.png" alt="ERD Image" width="600" height="300">
 
 ### --------------------------------------------------------------------------------------------
