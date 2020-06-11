@@ -1,6 +1,5 @@
 import React from 'react'
 import axios from 'axios'
-import CreatePost from './CreatePost'
 
 export default class Creator extends React.Component {
 
@@ -26,19 +25,16 @@ export default class Creator extends React.Component {
     render() {
         return (
             <div className='creator-content'>
-                <CreatePost
-                    creator={this.state.creators} />
                 <div className='creator-content-items'>
                     {this.state.creators.map((creator, index) => {
                         return (
                             <div key={`sdfksdkfljsdkljf;dkjfl-${index}`} className='creator-item'>
-                                <div className='creator-name'>{creator.name}</div>
-                                <img className='creator-image' src={creator.image} alt={creator.name} />
+                                <h1 className='creator-name'>{creator.name}</h1>
+                                <img className='creator-image' src={creator.image} alt={creator.name} height='auto' width='100' />
                                 <p className='creator-description'>{creator.description}</p>
                             </div>)
                     })}
                 </div>
-                <h1>Creators</h1>
             </div>
         )
     }

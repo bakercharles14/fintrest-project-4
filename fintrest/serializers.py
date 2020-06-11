@@ -15,8 +15,6 @@ class FinSerializer(serializers.ModelSerializer):
 
 
 class PostSerializer(serializers.ModelSerializer):
-    creator = CreatorSerializer(many=False, read_only=True)
-
     class Meta:
         model = Post
         fields = ('id',
