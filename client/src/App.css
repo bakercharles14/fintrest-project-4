@@ -5,13 +5,32 @@
   background-color: black;
 }
 
-a {
+.app-nav-bar > a {
   text-decoration: none;
   color: white;
+  margin-bottom: 1px;
 }
 
-a:hover {
+.app-nav-bar > a:hover {
   color: rgb(141, 140, 140);
   border-bottom: 1px solid rgb(140, 140, 140);
   transition: .2s ease-in;
+}
+
+.allposts-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.post-item {
+  padding: 5px;
+}
+
+.post-image {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
 }

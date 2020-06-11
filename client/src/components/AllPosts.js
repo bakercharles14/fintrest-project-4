@@ -14,7 +14,7 @@ export default class AllPosts extends React.Component {
 
     getAllPosts = async () => {
         try {
-            const res = await axios.get('/api/v1/allposts/')
+            const res = await axios.get('/api/v1/post/')
             const newState = { ...this.state }
             newState.posts = res.data
             this.setState(newState)
@@ -26,17 +26,13 @@ export default class AllPosts extends React.Component {
 
     render() {
         return (
-            <div>
-                <h1>All Posts</h1>
+            <div className='allposts-content'>
                 {this.state.posts.map((post) => {
                     return (
                         <Link to={`/post/${post.id}`}>
-                            <div>
+                            <div className='post-item'>
                                 <div>{post.title}</div>
-                                <div>{post.date}</div>
-                                <div>{post.content}</div>
-                                <img alt={post.title} src={post.image} />
-                                <div>{post.creator}</div>
+                                <img className='post-image' alt={post.title} src={post.image} />
                             </div>
                         </Link>)
                 })}
