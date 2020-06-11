@@ -42,6 +42,32 @@
   box-shadow: 3px 3px rgb(185, 182, 182);
 }
 
+.create-post-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.create-post-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.create-post-form div {
+  padding: 2px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.create-post-form label {
+  padding: 3px;
+}
+ 
 .allposts-content {
   display: flex;
   flex-wrap: wrap;

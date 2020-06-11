@@ -5,6 +5,7 @@ import AllPosts from './components/AllPosts'
 import Creator from './components/Creator'
 import Fins from './components/Fins'
 import Post from './components/Post'
+import CreatePost from './components/CreatePost'
 
 
 
@@ -30,6 +31,7 @@ export default class App extends React.Component {
               <Route exact path='/post/:postId' component={Post} />
               <Route exact path='/fins' component={Fins} />
               <Route exact path='/creator' component={Creator} />
+              <Route exact path='/createpost' component={CreatePost} />
             </Switch>
           </div>
           <div className='create-post-button'>

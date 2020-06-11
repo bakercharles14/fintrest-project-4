@@ -28,9 +28,9 @@ export default class AllPosts extends React.Component {
         return (
             <div className='allposts-content'>
                 <div className='allposts-content-items'>
-                    {this.state.posts.map((post) => {
+                    {this.state.posts.map((post, index) => {
                         return (
-                            <Link to={`/post/${post.id}`}>
+                            <Link key={`sldkfjasl;dkjfl-${index}`} to={`/post/${post.id}`}>
                                 <div className='post-item'>
                                     <div className='post-title'>{post.title}</div>
                                     <img className='post-image' alt={post.title} src={post.image} />
