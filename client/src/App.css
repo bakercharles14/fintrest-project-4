@@ -23,6 +23,7 @@
 
 .page-content {
   margin-top: 62px;
+  width: 100%;
 }
 
 .create-post-button {
@@ -45,7 +46,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 15px;
 }
 
@@ -53,13 +54,14 @@
   text-decoration: none;
   color: black;
   width: 20%;
+  padding: 5px;
 }
 
 .allposts-content-items {
-  padding: 10px;
-  width: 50%;
+  width: 80%;
   height: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
 }
@@ -86,13 +88,11 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity .2s, visibility .2s;
-  
 }
 
 .post-item:hover .post-title {
   visibility: visible;
   opacity: 1;
-  overflow-wrap: break-word;
 }
 
 .post-image {
