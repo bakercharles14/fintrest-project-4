@@ -3,6 +3,10 @@
   justify-content: space-evenly;
   align-items: center;
   background-color: black;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
 }
 
 .app-nav-bar > a {
@@ -17,20 +21,85 @@
   transition: .2s ease-in;
 }
 
+.page-content {
+  margin-top: 62px;
+}
+
+.create-post-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.create-post-button  .button {
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  box-shadow: 3px 3px rgb(185, 182, 182);
+}
+
 .allposts-content {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 15px;
 }
 
+.allposts-content a {
+  text-decoration: none;
+  color: black;
+}
+
 .post-item {
-  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .post-image {
-  width: 100px;
+  width: 20%;
   height: auto;
   object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 3px 3px rgb(184, 179, 179);
+}
+
+.single-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-button-link {
+  text-decoration: none;
+}
+
+.back-button {
+  display: flex;
+  justify-content: flex-start;
+  margin: 5px;
+  border: none;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  box-shadow: 3px 3px rgb(185, 182, 182);
+  position: fixed;
+  top: 70px;
+  left: 5px;
+}
+
+.single-post-image {
+  width: 60%;
+  height: auto;
+}
+
+.single-post-content {
+  width: 40%;
 }

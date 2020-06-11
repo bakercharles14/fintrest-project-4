@@ -24,12 +24,21 @@ export default class App extends React.Component {
               <h3>Your Fins</h3>
             </Link>
           </nav>
-          <Switch>
-            <Route exact path='/' component={AllPosts} />
-            <Route exact path='/post/:postId' component={Post} />
-            <Route exact path='/fins' component={Fins} />
-            <Route exact path='/creator' component={Creator} />
-          </Switch>
+          <div className='page-content'>
+            <Switch>
+              <Route exact path='/' component={AllPosts} />
+              <Route exact path='/post/:postId' component={Post} />
+              <Route exact path='/fins' component={Fins} />
+              <Route exact path='/creator' component={Creator} />
+            </Switch>
+          </div>
+          <div className='create-post-button'>
+            <Link to='/createpost'>
+              <button className='button mdc-icon-button material-icons'>
+                add
+          </button>
+            </Link>
+          </div>
         </Router>
 
       </div>
