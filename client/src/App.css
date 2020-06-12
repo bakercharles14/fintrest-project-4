@@ -164,6 +164,25 @@
   width: 40%;
 }
 
+.creator-content-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+}
+
+.creator-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 3px 3px rgb(184, 179, 179);
+}
+
 .fin-page h1 {
   display: flex;
   justify-content: center;
